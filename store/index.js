@@ -22,14 +22,14 @@ export const mutations = {
 export const actions = {
   async fetchPosts({ commit }, category = '') {
     const posts = await this.$axios.$get(
-      `https://newsapi.org/v2/top-headlines?country=ru&category=${category}&apiKey=${process.env.apiKey}`
+      `https://newsapi.org/v2/top-headlines?country=ru&category=${category}&apiKey=f5bab914c1b94139bf80bc529e33d703`
     )
     // console.log(posts)
     commit('setPosts', posts.articles)
   },
   async fetchSearch({ commit }, seach = '') {
     const posts = await this.$axios.$get(
-      `https://newsapi.org/v2/everything?q=${seach}&from=&sortBy=popularity&apiKey=${process.env.apiKey}`
+      `https://newsapi.org/v2/everything?q=${seach}&from=&sortBy=popularity&apiKey=f5bab914c1b94139bf80bc529e33d703`
     )
     // console.log(posts)
     commit('setSearch', posts.articles)
