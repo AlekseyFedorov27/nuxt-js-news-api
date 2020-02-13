@@ -1,5 +1,5 @@
 # newsapi
-
+live demo: https://nuxtnewsapp.herokuapp.com/
 > nuxtApp
 
 ## Build Setup
